@@ -11,9 +11,24 @@ function update(){
    
    //Values showed on screen
    document.getElementById('tipPercent').innerHTML = tipPercentage + '%';
-   document.getElementById('tipValue').innerHTML = tipValue + '€';
-   document.getElementById('totalWithTip').innerHTML = billTotal + '€';
-   document.getElementById('splitValue').innerHTML = split;
-   document.getElementById('billEach').innerHTML = billEach + '€';
+   document.getElementById('tipValue').innerHTML = formatMoney(tipValue);
+   document.getElementById('totalWithTip').innerHTML = formatMoney(billTotal);
+   document.getElementById('splitValue').innerHTML = formatSplit(split);
+   document.getElementById('billEach').innerHTML = formatMoney(billEach);
    
+}
+
+function formatMoney(value){
+   value = Math.ceil(value * 100)/100; //esta funçao garante que o valor da 2ª casa decimal é sempre arredondado para cima 
+   value = value.toFixed(2); //fixa o valor em duas casas decimais
+   return value + '€';
+}
+
+function formatSplit(value){
+   if(value == 1){
+      return value + ' person';
+   }
+   else{
+      return value + ' people';
+   }
 }
