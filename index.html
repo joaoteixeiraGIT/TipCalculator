@@ -9,10 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Quick Tip</title>
+    <title>Quick Tip Calculator</title>
   </head>
   <body>
-    <main >
+    <main oninput="update()" >
       <h1>Quick Tip</h1>
       <section>
         <div class="bill">
@@ -20,7 +20,7 @@
           <input 
             type="number" 
             placeholder="Your bill" 
-            id="yourBill"  />
+            id="yourBill" />
         </div>
         <div>
           <div class="space-between">
