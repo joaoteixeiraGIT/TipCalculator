@@ -1,14 +1,15 @@
 html {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
-    color: #4e4d4d;
+    color: #fff;
+    background-color: #087E8B;
   }
   
   main {
     max-width: 50rem;
     margin: 2rem auto;
     padding: 3rem 1.6rem 6rem 1.6rem;
-    background: linear-gradient(30deg, #3dc0c0, #5bceae);
+    background: linear-gradient(30deg, #087E8B, #0B3954);
     border-radius: 4rem;
     box-shadow: 0 2px 2px lightgray;
   }
@@ -21,7 +22,7 @@ html {
   }
   
   section {
-    background-color: white;
+    background-color: #BFD7EA;
     font-size: 1.8rem;
     margin-bottom: 1.6rem;
     padding: 0 1.6rem;
